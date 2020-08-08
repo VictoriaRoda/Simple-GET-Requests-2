@@ -30,7 +30,7 @@ function displayResults(responseJson) {
     
   console.log(imageUrls);
 
-  $('.results').replaceWith(`<div class="results-img">${imageUrls}</div>`);
+  $('.results, .results-img').replaceWith(`<div class="results-img">${imageUrls}</div>`);
   
 }
 
