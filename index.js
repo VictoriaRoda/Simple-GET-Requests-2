@@ -8,7 +8,7 @@ function getDogImage(num) {
     .then(responseJson => displayResults(responseJson))
     .catch(error => alert('Something went wrong. Try again later.'));
 }
-}
+
 
 function checkValidForm(val) {
   if(val >= 1 && val <= 50) {
@@ -30,7 +30,7 @@ function displayResults(responseJson) {
     
   console.log(imageUrls);
 
-  $('.results hidden').replaceWith(`<div class="results-img">${imageUrls}</div>`);
+  $('.results').replaceWith(`<div class="results-img">${imageUrls}</div>`);
   
 }
 
